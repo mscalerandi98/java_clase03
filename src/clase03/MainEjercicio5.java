@@ -1,3 +1,5 @@
+package clase03;
+
 import java.util.Scanner;
 
 public class MainEjercicio5 {
@@ -30,14 +32,12 @@ public class MainEjercicio5 {
         String sNumero = numero.toString();
         int contador = 0;
 
-        int posicion = sNumero.indexOf(sDigito);
-
         while (sNumero.indexOf(sDigito) > -1){
             contador ++;
             if (contador == cantidadDigitos ){
                 return true;
             }
-            sNumero = sNumero.substring(posicion +1, sNumero.length());
+            sNumero = sNumero.substring(sNumero.indexOf(sDigito), sNumero.length());
         }
         return false;
     }
