@@ -1,4 +1,5 @@
 package clase06_Java4.dakar;
 
-public class Socorrista {
+public interface Socorrista<Vehiculo> {
+     void socorrer(Vehiculo v);
 }
